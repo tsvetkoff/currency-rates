@@ -5,7 +5,7 @@ package tsvetkoff.currencyrates.jooq.main.public_.tables;
 
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
@@ -72,7 +72,7 @@ public class Rate extends TableImpl<RateRecord> {
     /**
      * The column <code>public.rate.date</code>.
      */
-    public final TableField<RateRecord, LocalDateTime> DATE = createField(DSL.name("date"), SQLDataType.LOCALDATETIME(6), this, "");
+    public final TableField<RateRecord, OffsetDateTime> DATE = createField(DSL.name("date"), SQLDataType.TIMESTAMPWITHTIMEZONE(6), this, "");
 
     /**
      * The column <code>public.rate.purchase</code>.
@@ -204,14 +204,14 @@ public class Rate extends TableImpl<RateRecord> {
     // -------------------------------------------------------------------------
 
     @Override
-    public Row6<UUID, String, String, LocalDateTime, BigDecimal, BigDecimal> fieldsRow() {
+    public Row6<UUID, String, String, OffsetDateTime, BigDecimal, BigDecimal> fieldsRow() {
         return (Row6) super.fieldsRow();
     }
 
     /**
      * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
      */
-    public <U> SelectField<U> mapping(Function6<? super UUID, ? super String, ? super String, ? super LocalDateTime, ? super BigDecimal, ? super BigDecimal, ? extends U> from) {
+    public <U> SelectField<U> mapping(Function6<? super UUID, ? super String, ? super String, ? super OffsetDateTime, ? super BigDecimal, ? super BigDecimal, ? extends U> from) {
         return convertFrom(Records.mapping(from));
     }
 
@@ -219,7 +219,7 @@ public class Rate extends TableImpl<RateRecord> {
      * Convenience mapping calling {@link SelectField#convertFrom(Class,
      * Function)}.
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function6<? super UUID, ? super String, ? super String, ? super LocalDateTime, ? super BigDecimal, ? super BigDecimal, ? extends U> from) {
+    public <U> SelectField<U> mapping(Class<U> toType, Function6<? super UUID, ? super String, ? super String, ? super OffsetDateTime, ? super BigDecimal, ? super BigDecimal, ? extends U> from) {
         return convertFrom(toType, Records.mapping(from));
     }
 }

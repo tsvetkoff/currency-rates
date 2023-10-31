@@ -5,7 +5,7 @@ package tsvetkoff.currencyrates.jooq.main.public_.tables.daos;
 
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -105,14 +105,14 @@ public class RateDao extends DAOImpl<RateRecord, tsvetkoff.currencyrates.jooq.ma
      * Fetch records that have <code>date BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
-    public List<tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate> fetchRangeOfDate(LocalDateTime lowerInclusive, LocalDateTime upperInclusive) {
+    public List<tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate> fetchRangeOfDate(OffsetDateTime lowerInclusive, OffsetDateTime upperInclusive) {
         return fetchRange(Rate.RATE.DATE, lowerInclusive, upperInclusive);
     }
 
     /**
      * Fetch records that have <code>date IN (values)</code>
      */
-    public List<tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate> fetchByDate(LocalDateTime... values) {
+    public List<tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate> fetchByDate(OffsetDateTime... values) {
         return fetch(Rate.RATE.DATE, values);
     }
 

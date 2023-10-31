@@ -23,5 +23,8 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
     <changeSet id="2023-10-30-create-rate" author="v.tsvetkov">
         <sqlFile path="sql/2023-10-30-create-rate.sql" splitStatements="false" relativeToChangelogFile="true"/>
     </changeSet>
+    <changeSet id="2023-11-01-create-shedlock" author="v.tsvetkov">
+        <sqlFile path="sql/2023-11-01-create-shedlock.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
 
 </databaseChangeLog>

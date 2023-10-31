@@ -6,7 +6,7 @@ package tsvetkoff.currencyrates.jooq.main.public_.tables.pojos;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 
@@ -21,7 +21,7 @@ public class Rate implements Serializable {
     private UUID id;
     private String bank;
     private String currency;
-    private LocalDateTime date;
+    private OffsetDateTime date;
     private BigDecimal purchase;
     private BigDecimal sale;
 
@@ -40,7 +40,7 @@ public class Rate implements Serializable {
         UUID id,
         String bank,
         String currency,
-        LocalDateTime date,
+        OffsetDateTime date,
         BigDecimal purchase,
         BigDecimal sale
     ) {
@@ -100,14 +100,14 @@ public class Rate implements Serializable {
     /**
      * Getter for <code>public.rate.date</code>.
      */
-    public LocalDateTime getDate() {
+    public OffsetDateTime getDate() {
         return this.date;
     }
 
     /**
      * Setter for <code>public.rate.date</code>.
      */
-    public Rate setDate(LocalDateTime date) {
+    public Rate setDate(OffsetDateTime date) {
         this.date = date;
         return this;
     }

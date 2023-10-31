@@ -12,3 +12,22 @@ spring:
     default-schema: public
     liquibase-schema: public
     change-log: classpath:/db/changelog/db.changelog-master.xml
+
+logging:
+  level:
+    "tsvetkoff.currencyrates": DEBUG
+
+data:
+  update_rates.cron: "0 */10 8-19 * * MON-SAT"
+  rest:
+    connect-timeout: 60s
+    read-timeout: 60s
+  bank-clients:
+    cbr:
+      enabled: true
+      base-url: https://www.cbr-xml-daily.ru
+      rate-url: /daily_json.js
+    vtb:
+      enabled: true
+      base-url: https://siteapi.vtb.ru
+      rate-url: /api/currencyrates/table?category=3&type=1

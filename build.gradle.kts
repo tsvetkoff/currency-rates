@@ -22,10 +22,14 @@ repositories {
     mavenCentral()
 }
 
+val shedlockVersion = "5.9.1"
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jooq")
     implementation("org.liquibase:liquibase-core")
+    implementation("net.javacrumbs.shedlock:shedlock-spring:${shedlockVersion}")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-jdbc-template:${shedlockVersion}")
 
     jooqGenerator("org.postgresql:postgresql")
 
