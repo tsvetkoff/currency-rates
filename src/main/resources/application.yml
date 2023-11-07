@@ -13,6 +13,9 @@ spring:
     liquibase-schema: public
     change-log: classpath:/db/changelog/db.changelog-master.xml
 
+server:
+  forward-headers-strategy: framework
+
 logging:
   level:
     "tsvetkoff.currencyrates": DEBUG
@@ -31,3 +34,7 @@ data:
       enabled: true
       base-url: https://siteapi.vtb.ru
       rate-url: /api/currencyrates/table?category=3&type=1
+    koshelev:
+      enabled: true
+      base-url: https://koshelev-bank.ru
+      rate-url: /local/assets/ajax/currencies/getViewCurrencyExchange.php?city_id=23880
