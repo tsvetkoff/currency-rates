@@ -1,0 +1,522 @@
+[
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "AED",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 25.0656,
+    "sale": 25.0656
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "AED",
+    "date": "2023-11-13T13:40:00+04:00",
+    "purchase": 20.3000,
+    "sale": 29.5100
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "AMD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 22.8653,
+    "sale": 22.8653
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "AMD",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 0.0000,
+    "sale": 0.0000
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "AUD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 58.5552,
+    "sale": 58.5552
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "AZN",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 54.1491,
+    "sale": 54.1491
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "BGN",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 50.3190,
+    "sale": 50.3190
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "BRL",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 18.7849,
+    "sale": 18.7849
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "BYN",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 28.9804,
+    "sale": 28.9804
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "CAD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 66.7974,
+    "sale": 66.7974
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "CAD",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 56.9500,
+    "sale": 80.7000
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "CHF",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 101.9419,
+    "sale": 101.9419
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "CHF",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 80.0000,
+    "sale": 105.0000
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "CHF",
+    "date": "2023-11-13T14:10:00+04:00",
+    "purchase": 85.2000,
+    "sale": 107.1000
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "CNY",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 12.5979,
+    "sale": 12.5979
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "CNY",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 12.5000,
+    "sale": 13.1000
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "CNY",
+    "date": "2023-11-13T14:10:00+04:00",
+    "purchase": 12.5135,
+    "sale": 12.6990
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "CZK",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 40.0790,
+    "sale": 40.0790
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "CZK",
+    "date": "2023-11-13T09:20:00+04:00",
+    "purchase": 2.7500,
+    "sale": 4.0500
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "DKK",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 13.1952,
+    "sale": 13.1952
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "EGP",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 29.7960,
+    "sale": 29.7960
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "EUR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 98.3155,
+    "sale": 98.3155
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "EUR",
+    "date": "2023-11-13T09:20:00+04:00",
+    "purchase": 98.7500,
+    "sale": 99.9000
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "EUR",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 93.1500,
+    "sale": 100.0500
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "GBP",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 113.1061,
+    "sale": 113.1061
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "GBP",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 110.0000,
+    "sale": 120.0000
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "GBP",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 81.6000,
+    "sale": 116.8000
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "GEL",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 34.0334,
+    "sale": 34.0334
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "HKD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 11.8078,
+    "sale": 11.8078
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "HUF",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 26.0790,
+    "sale": 26.0790
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "IDR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 58.8239,
+    "sale": 58.8239
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "INR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 11.0552,
+    "sale": 11.0552
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "INR",
+    "date": "2023-11-13T10:20:00+04:00",
+    "purchase": 0.6626,
+    "sale": 1.1133
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "JPY",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 60.8296,
+    "sale": 60.8296
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "JPY",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 60.0000,
+    "sale": 70.0000
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "JPY",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 0.5155,
+    "sale": 0.6905
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "KGS",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 10.3060,
+    "sale": 10.3060
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "KRW",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 69.9070,
+    "sale": 69.9070
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "KZT",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 19.6675,
+    "sale": 19.6675
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "KZT",
+    "date": "2023-11-12T11:54:00+04:00",
+    "purchase": 0.0000,
+    "sale": 0.0000
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "MDL",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 51.4354,
+    "sale": 51.4354
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "NOK",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 82.3354,
+    "sale": 82.3354
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "NOK",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 7.2975,
+    "sale": 9.2570
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "NZD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 54.2471,
+    "sale": 54.2471
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "PLN",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 22.2228,
+    "sale": 22.2228
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "PLN",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 18.9710,
+    "sale": 26.8630
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "QAR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 25.2894,
+    "sale": 25.2894
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "RON",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 19.7807,
+    "sale": 19.7807
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "RSD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 83.8219,
+    "sale": 83.8219
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "SEK",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 84.3854,
+    "sale": 84.3854
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "SEK",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 7.4625,
+    "sale": 9.4585
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "SGD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 67.8961,
+    "sale": 67.8961
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "THB",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 25.7228,
+    "sale": 25.7228
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "TJS",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 84.0334,
+    "sale": 84.0334
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "TMT",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 26.3010,
+    "sale": 26.3010
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "TRY",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 32.2977,
+    "sale": 32.2977
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "TRY",
+    "date": "2023-11-13T14:20:00+04:00",
+    "purchase": 2.6920,
+    "sale": 3.7895
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "UAH",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 25.5449,
+    "sale": 25.5449
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "USD",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 92.0535,
+    "sale": 92.0535
+  },
+  {
+    "bank": "Koshelev Bank",
+    "bankName": "Кошелев Банк",
+    "currency": "USD",
+    "date": "2023-11-13T09:20:00+04:00",
+    "purchase": 92.5000,
+    "sale": 93.8500
+  },
+  {
+    "bank": "VTB",
+    "bankName": "ВТБ",
+    "currency": "USD",
+    "date": "2023-11-13T13:40:00+04:00",
+    "purchase": 89.5500,
+    "sale": 94.3500
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "UZS",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 74.9131,
+    "sale": 74.9131
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "VND",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 38.3333,
+    "sale": 38.3333
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "XDR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 121.1884,
+    "sale": 121.1884
+  },
+  {
+    "bank": "CBR",
+    "bankName": "ЦБ РФ",
+    "currency": "ZAR",
+    "date": "2023-11-10T17:40:00+04:00",
+    "purchase": 49.3476,
+    "sale": 49.3476
+  }
+]

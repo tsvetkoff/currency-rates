@@ -22,4 +22,5 @@ public class CurrencyDao {
                 .set(dslContext.newRecord(CURRENCY, currency))
                 .execute();
     }
+
 }

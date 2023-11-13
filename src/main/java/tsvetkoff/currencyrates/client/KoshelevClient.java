@@ -1,34 +1,35 @@
 package tsvetkoff.currencyrates.client;
 
-import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Service
+@Component
 @ConditionalOnProperty(
         name = "data.bank-clients.koshelev.enabled",
         havingValue = "true"
 )
-@Slf4j
 public class KoshelevClient implements BankClient {
 
     private static final String BANK = "Koshelev Bank";
 
-    @Value("${data.bank-clients.koshelev.base-url}")
-    private String baseUrl;
+    private final String baseUrl;
+    private final String rateUrl;
 
-    @Value("${data.bank-clients.koshelev.rate-url}")
-    private String rateUrl;
+    public KoshelevClient(@Value("${data.bank-clients.koshelev.base-url}") String baseUrl,
+                          @Value("${data.bank-clients.koshelev.rate-url}") String rateUrl) {
+        this.baseUrl = baseUrl;
+        this.rateUrl = rateUrl;
+    }
 
     public List<Rate> getRates() {
         Document document;

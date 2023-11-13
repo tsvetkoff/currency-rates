@@ -1,11 +1,8 @@
 package tsvetkoff.currencyrates.client;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import tsvetkoff.currencyrates.dto.VtbDto;
 import tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate;

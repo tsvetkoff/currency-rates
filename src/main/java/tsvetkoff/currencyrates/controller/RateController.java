@@ -1,7 +1,6 @@
 package tsvetkoff.currencyrates.controller;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +18,6 @@ import java.util.List;
 @RequestMapping("/api/rates")
 @CrossOrigin
 @RequiredArgsConstructor
-@Slf4j
 public class RateController {
 
     private final RateService rateService;
