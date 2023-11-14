@@ -1,5 +1,21 @@
 version: '3.8'
 services:
+  currency-rates:
+    build: .
+    container_name: currency-rates
+    image: tsvetkoff/currency-rates
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      TZ: Europe/Samara
+      DB_JDBC_URL: jdbc:postgresql://postgres:5432/postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    networks:
+      - core
+    restart: unless-stopped
   postgres:
     container_name: postgres
     image: postgres
@@ -17,9 +33,9 @@ services:
       - pgdata:/var/lib/postgresql/data
   pgadmin:
     container_name: pgadmin
+    image: dpage/pgadmin4
     depends_on:
       - postgres
-    image: dpage/pgadmin4
     restart: unless-stopped
     ports:
       - "5050:80"
@@ -30,6 +46,33 @@ services:
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
     networks:
       - core
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus
+    volumes:
+      - ./prometheus/:/etc/prometheus/
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    ports:
+      - "9090:9090"
+    networks:
+      - core
+    restart: unless-stopped
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    depends_on:
+      - prometheus
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    ports:
+      - "3000:3000"
+    networks:
+      - core
+    restart: unless-stopped
 
 networks:
   core:
