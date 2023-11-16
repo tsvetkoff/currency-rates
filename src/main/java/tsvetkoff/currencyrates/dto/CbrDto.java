@@ -7,6 +7,9 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.Map;
 
+/**
+ * Объект ответа для ЦБ РФ.
+ */
 @Data
 public class CbrDto {
 

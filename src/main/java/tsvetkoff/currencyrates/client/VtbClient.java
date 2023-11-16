@@ -14,6 +14,9 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Клиент для получения курсов валют бана ВТБ.
+ */
 @Component
 @ConditionalOnProperty(
         name = "data.bank-clients.vtb.enabled",

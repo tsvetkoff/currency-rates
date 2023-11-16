@@ -13,6 +13,9 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
+/**
+ * Клиент для получения курсов валют ЦБ РФ.
+ */
 @Component
 @ConditionalOnProperty(
         name = "data.bank-clients.cbr.enabled",

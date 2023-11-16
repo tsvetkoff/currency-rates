@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim as build
+FROM eclipse-temurin:17 as builder
 ENV APP_HOME=/home/gradle/project
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
@@ -8,8 +8,8 @@ RUN ./gradlew build -x check || true
 COPY . $APP_HOME
 RUN ./gradlew clean build -x check
 
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17
 RUN mkdir -p /opt
 WORKDIR /opt
-COPY --from=build /home/gradle/project/build/libs/currency-rates.jar /opt/currency-rates.jar
+COPY --from=builder /home/gradle/project/build/libs/currency-rates.jar /opt/currency-rates.jar
 ENTRYPOINT ["java",  "-jar", "currency-rates.jar"]

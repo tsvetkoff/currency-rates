@@ -133,7 +133,7 @@ class RateDaoTests {
     }
 
     @Test
-    public void testInsert() {
+    void testInsert() {
         // given
         Rate expected = new Rate();
         expected.setBank("VTB");
