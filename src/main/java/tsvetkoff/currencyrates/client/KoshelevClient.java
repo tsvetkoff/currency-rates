@@ -34,6 +34,7 @@ public class KoshelevClient implements BankClient {
         this.rateUrl = rateUrl;
     }
 
+    @Override
     public List<Rate> getRates() {
         Document document;
         try {

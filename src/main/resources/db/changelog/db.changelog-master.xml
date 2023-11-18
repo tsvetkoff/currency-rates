@@ -26,5 +26,17 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
     <changeSet id="2023-11-01-create-shedlock" author="v.tsvetkov">
         <sqlFile path="sql/2023-11-01-create-shedlock.sql" splitStatements="false" relativeToChangelogFile="true"/>
     </changeSet>
+    <changeSet id="2023-11-18-create-users" author="v.tsvetkov">
+        <sqlFile path="sql/2023-11-18-create-users.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="2023-11-18-fill-users" author="v.tsvetkov">
+        <sqlFile path="sql/2023-11-18-fill-users.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="2023-11-18-create-authorities" author="v.tsvetkov">
+        <sqlFile path="sql/2023-11-18-create-authorities.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet id="2023-11-18-fill-authorities" author="v.tsvetkov">
+        <sqlFile path="sql/2023-11-18-fill-authorities.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
 
 </databaseChangeLog>

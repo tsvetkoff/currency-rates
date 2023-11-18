@@ -7,9 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.io.Resource;
+import org.springframework.security.test.context.support.WithAnonymousUser;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+import tsvetkoff.currencyrates.config.TestSecurityConfiguration;
 import tsvetkoff.currencyrates.dto.RateDto;
 import tsvetkoff.currencyrates.dto.RateHistoryDto;
 import tsvetkoff.currencyrates.service.RateService;
@@ -24,6 +28,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(controllers = RateController.class)
+@Import(TestSecurityConfiguration.class)
 class RateControllerTests {
 
     private static final TypeReference<List<RateDto>> LIST_RATE_DTO = new TypeReference<>() {
@@ -48,6 +53,7 @@ class RateControllerTests {
     private Resource getRateHistoryResource;
 
     @Test
+    @WithMockUser(roles = {"USER"})
     void testGetCurrentRates() throws Exception {
         // given
         String responseAsString = getCurrentResource.getContentAsString(StandardCharsets.UTF_8);
@@ -69,6 +75,14 @@ class RateControllerTests {
     }
 
     @Test
+    @WithAnonymousUser
+    void testGetCurrentRatesUnauthorized() throws Exception {
+        mockMvc.perform(get("/api/rates/current"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @WithMockUser(roles = {"USER"})
     void testGetRateHistory() throws Exception {
         // given
         String bank = "CBR";
@@ -92,9 +106,36 @@ class RateControllerTests {
     }
 
     @Test
+    @WithAnonymousUser
+    void testGetRateHistoryUnauthorized() throws Exception {
+        // given
+        String bank = "CBR";
+        String currency = "USD";
+
+        // then
+        mockMvc.perform(get("/api/rates?bank={bank}&currency={currency}", bank, currency))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @WithMockUser(roles = {"ADMIN"})
     void testUpdateRates() throws Exception {
         mockMvc.perform(post("/api/rates/update"))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    @WithAnonymousUser
+    void testUpdateRatesUnauthorized() throws Exception {
+        mockMvc.perform(post("/api/rates/update"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    @WithMockUser(roles = {"USER"})
+    void testUpdateRatesForbidden() throws Exception {
+        mockMvc.perform(post("/api/rates/update"))
+                .andExpect(status().isForbidden());
     }
 
 }
