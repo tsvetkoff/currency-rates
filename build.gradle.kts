@@ -3,6 +3,7 @@ plugins {
     id("org.springframework.boot") version "3.1.5"
     id("io.spring.dependency-management") version "1.1.3"
     id("nu.studer.jooq") version "8.2.1"
+    pmd
 }
 
 group = "tsvetkoff"
@@ -107,4 +108,12 @@ jooq {
             }
         }
     }
+}
+
+pmd {
+    toolVersion = "6.55.0"
+    isConsoleOutput = true
+    isIgnoreFailures = false
+    ruleSets = emptyList()
+    ruleSetFiles = files("$projectDir/config/pmd/pmd.xml")
 }
