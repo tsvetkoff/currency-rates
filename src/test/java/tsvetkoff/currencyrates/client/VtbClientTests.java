@@ -86,8 +86,8 @@ class VtbClientTests {
             assertEquals("VTB", actual.getBank());
             assertEquals(currency, actual.getCurrency());
             assertNull(actual.getDate());
-            assertEquals(expected.getBid(), actual.getPurchase());
-            assertEquals(expected.getOffer(), actual.getSale());
+            assertEquals(0, expected.getBid().compareTo(actual.getPurchase()));
+            assertEquals(0, expected.getOffer().compareTo(actual.getSale()));
         }
     }
 

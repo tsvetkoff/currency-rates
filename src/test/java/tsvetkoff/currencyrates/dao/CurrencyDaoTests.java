@@ -34,7 +34,7 @@ class CurrencyDaoTests {
     private DSLContext dslContext;
 
     @Test
-    public void testExistsById() {
+    void testExistsById() {
         // given
         List<String> currencies = dslContext.select(CURRENCY.ID)
                 .from(CURRENCY)
@@ -47,7 +47,7 @@ class CurrencyDaoTests {
     }
 
     @Test
-    public void testInsert() {
+    void testInsert() {
         // given
         Currency expected = new Currency();
         expected.setId("test-id");

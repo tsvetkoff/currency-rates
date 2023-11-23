@@ -3,6 +3,7 @@ plugins {
     id("org.springframework.boot") version "3.1.5"
     id("io.spring.dependency-management") version "1.1.3"
     id("nu.studer.jooq") version "8.2.1"
+    pmd
 }
 
 group = "tsvetkoff"
@@ -24,6 +25,8 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-jooq")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
@@ -46,6 +49,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:postgresql:1.19.1")
     testImplementation("org.testcontainers:junit-jupiter")
@@ -104,4 +108,12 @@ jooq {
             }
         }
     }
+}
+
+pmd {
+    toolVersion = "6.55.0"
+    isConsoleOutput = true
+    isIgnoreFailures = false
+    ruleSets = emptyList()
+    ruleSetFiles = files("$projectDir/config/pmd/pmd.xml")
 }

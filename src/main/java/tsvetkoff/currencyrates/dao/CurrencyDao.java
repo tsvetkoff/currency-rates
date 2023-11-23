@@ -13,10 +13,21 @@ public class CurrencyDao {
 
     private final DSLContext dslContext;
 
+    /**
+     * Проверка существования валюты по её идентификатору.
+     *
+     * @param id Идентификатор валюты
+     * @return Признак существования записи
+     */
     public boolean existsById(String id) {
         return dslContext.fetchExists(CURRENCY, CURRENCY.ID.eq(id));
     }
 
+    /**
+     * Добавление валюты в справочник валют
+     *
+     * @param currency Валюта
+     */
     public void insert(Currency currency) {
         dslContext.insertInto(CURRENCY)
                 .set(dslContext.newRecord(CURRENCY, currency))

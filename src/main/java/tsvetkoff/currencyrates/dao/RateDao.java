@@ -27,6 +27,11 @@ public class RateDao {
 
     private final DSLContext dslContext;
 
+    /**
+     * Поиск текущих значений курсов валют для всех банков.
+     *
+     * @return Текущие значения курсов валют для всех банков
+     */
     public List<RateDto> findCurrentRates() {
         WindowDefinition w = name("w").as(partitionBy(RATE.CURRENCY, RATE.BANK).orderBy(RATE.DATE.desc()));
         return dslContext.selectFrom(
@@ -50,6 +55,13 @@ public class RateDao {
                 .fetchInto(RateDto.class);
     }
 
+    /**
+     * Поиск истории курса валют для указанного банка и валюты.
+     *
+     * @param bank     Банк
+     * @param currency Валюта
+     * @return Список курсов валют для указанного банка и валюты
+     */
     public List<RateHistoryDto> findRateHistory(String bank, String currency) {
         return dslContext.select(RATE.DATE, RATE.PURCHASE, RATE.SALE)
                 .from(RATE)
@@ -62,6 +74,14 @@ public class RateDao {
                 .fetchInto(RateHistoryDto.class);
     }
 
+    /**
+     * Поиск курса валют для указанного банка и валюты не позднее указанной даты.
+     *
+     * @param bank     Банк
+     * @param currency Валюта
+     * @param date     Дата
+     * @return Курса валют для указанного банка и валюты не позднее указанной даты
+     */
     public Rate findRateLessOrEqual(String bank, String currency, OffsetDateTime date) {
         return dslContext.selectFrom(RATE)
                 .where(
@@ -73,6 +93,11 @@ public class RateDao {
                 .fetchOneInto(Rate.class);
     }
 
+    /**
+     * Добавление валюты в таблицу валют
+     *
+     * @param rate Курс валюты
+     */
     public void insert(Rate rate) {
         UUID id = dslContext.insertInto(RATE)
                 .set(dslContext.newRecord(RATE, rate))

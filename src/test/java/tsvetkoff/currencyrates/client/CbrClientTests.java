@@ -15,6 +15,8 @@ import tsvetkoff.currencyrates.dto.CbrDto.Valute;
 import tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
@@ -78,8 +80,10 @@ class CbrClientTests {
             assertEquals("CBR", actual.getBank());
             assertEquals(currency, actual.getCurrency());
             assertNull(actual.getDate());
-            assertEquals(expected.getValue(), actual.getPurchase());
-            assertEquals(expected.getValue(), actual.getSale());
+
+            BigDecimal value = expected.getValue().divide(expected.getNominal(), RoundingMode.HALF_UP);
+            assertEquals(0, value.compareTo(actual.getPurchase()));
+            assertEquals(0, value.compareTo(actual.getSale()));
         }
     }
 

@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * Клиент для получения курсов валют Кошелев Банка.
+ */
 @Component
 @ConditionalOnProperty(
         name = "data.bank-clients.koshelev.enabled",
@@ -31,6 +34,7 @@ public class KoshelevClient implements BankClient {
         this.rateUrl = rateUrl;
     }
 
+    @Override
     public List<Rate> getRates() {
         Document document;
         try {
