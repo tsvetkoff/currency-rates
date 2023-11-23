@@ -1,0 +1,539 @@
+{
+  "category": {
+    "id": 3,
+    "name": "В интернет-банке и мобильном банке",
+    "description": "Безналичная конвертация",
+    "target": "link2"
+  },
+  "dateFrom": "2023-11-13T12:20:00.204",
+  "rates": [
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 89.6500,
+      "offer": 94.4500,
+      "tooltip": "до 100.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 89.8500,
+      "offer": 94.2500,
+      "tooltip": "до 500.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 89.9000,
+      "offer": 94.2000,
+      "tooltip": "до 1000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 89.9500,
+      "offer": 94.1500,
+      "tooltip": "до 10000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 90.0000,
+      "offer": 94.1000,
+      "tooltip": "до 50000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 90.0500,
+      "offer": 94.0500,
+      "tooltip": "до 100000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 90.1000,
+      "offer": 94.0000,
+      "tooltip": "до 500000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 90.1000,
+      "offer": 94.0000,
+      "tooltip": "до 1000000.00"
+    },
+    {
+      "currency1": {
+        "code": "USD",
+        "rusName": "Доллар США",
+        "symbol": "$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 90.1000,
+      "offer": 94.0000,
+      "tooltip": "от 1000000.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.3000,
+      "offer": 100.2000,
+      "tooltip": "до 85.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.5000,
+      "offer": 100.0000,
+      "tooltip": "до 425.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.5500,
+      "offer": 99.9500,
+      "tooltip": "до 850.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.6000,
+      "offer": 99.9000,
+      "tooltip": "до 8500.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.6500,
+      "offer": 99.8500,
+      "tooltip": "до 42500.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.7000,
+      "offer": 99.8000,
+      "tooltip": "до 85000.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.7500,
+      "offer": 99.7500,
+      "tooltip": "до 425000.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.7500,
+      "offer": 99.7500,
+      "tooltip": "до 850000.00"
+    },
+    {
+      "currency1": {
+        "code": "EUR",
+        "rusName": "Евро",
+        "symbol": "€"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 93.7500,
+      "offer": 99.7500,
+      "tooltip": "от 850000.00"
+    },
+    {
+      "currency1": {
+        "code": "GBP",
+        "rusName": "Фунт стерлингов",
+        "symbol": "£"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 81.8000,
+      "offer": 116.9500,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "CHF",
+        "rusName": "Швейцарский франк",
+        "symbol": "₣"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 85.4000,
+      "offer": 107.2500,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "CAD",
+        "rusName": "Канадский доллар",
+        "symbol": "C$"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 57.1000,
+      "offer": 80.8500,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "SEK",
+        "rusName": "Шведская крона",
+        "symbol": "Kr"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 7.4610,
+      "offer": 9.4570,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "NOK",
+        "rusName": "Норвежская крона",
+        "symbol": "NKr"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 7.3050,
+      "offer": 9.2660,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "JPY",
+        "rusName": "Японская иена",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 0.5155,
+      "offer": 0.6915,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "CNY",
+        "rusName": "Китайский юань",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 12.5265,
+      "offer": 12.7120,
+      "tooltip": "до 650.00"
+    },
+    {
+      "currency1": {
+        "code": "CNY",
+        "rusName": "Китайский юань",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 12.5285,
+      "offer": 12.7100,
+      "tooltip": "до 70000.00"
+    },
+    {
+      "currency1": {
+        "code": "CNY",
+        "rusName": "Китайский юань",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 12.5315,
+      "offer": 12.7070,
+      "tooltip": "до 670000.00"
+    },
+    {
+      "currency1": {
+        "code": "CNY",
+        "rusName": "Китайский юань",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 12.5365,
+      "offer": 12.7020,
+      "tooltip": "до 6700000.00"
+    },
+    {
+      "currency1": {
+        "code": "CNY",
+        "rusName": "Китайский юань",
+        "symbol": "¥"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 12.5415,
+      "offer": 12.6970,
+      "tooltip": "от 6700000.00"
+    },
+    {
+      "currency1": {
+        "code": "PLN",
+        "rusName": "Польский злотый",
+        "symbol": "Zl"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 18.9850,
+      "offer": 26.8830,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "TRY",
+        "rusName": "Турецкая лира",
+        "symbol": "₺"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 2.6970,
+      "offer": 3.7975,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "INR",
+        "rusName": "Индийская рупия",
+        "symbol": "₹"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 0.6626,
+      "offer": 1.1133,
+      "tooltip": ""
+    },
+    {
+      "currency1": {
+        "code": "AED",
+        "rusName": "Дирхам ОАЭ",
+        "symbol": "Aed"
+      },
+      "currency2": {
+        "code": "RUB",
+        "rusName": "Российский рубль",
+        "symbol": "₽"
+      },
+      "scale": 1,
+      "bid": 20.3200,
+      "offer": 29.5500,
+      "tooltip": ""
+    }
+  ]
+}

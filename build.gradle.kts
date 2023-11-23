@@ -25,7 +25,14 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jooq")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
     implementation("org.liquibase:liquibase-core")
+    implementation("net.javacrumbs.shedlock:shedlock-spring:5.9.1")
+    implementation("net.javacrumbs.shedlock:shedlock-provider-jdbc-template:5.9.1")
+    implementation("org.jsoup:jsoup:1.16.2")
+    implementation("org.webjars:bootstrap:5.3.2")
+    implementation("org.webjars:popper.js:2.11.7")
+    implementation("org.webjars:highcharts:11.1.0")
 
     jooqGenerator("org.postgresql:postgresql")
 
@@ -36,6 +43,9 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-testcontainers")
+    testImplementation("org.testcontainers:postgresql:1.19.1")
+    testImplementation("org.testcontainers:junit-jupiter")
 }
 
 tasks.withType<Test> {
@@ -54,7 +64,7 @@ jooq {
                 logging = org.jooq.meta.jaxb.Logging.WARN
                 jdbc.apply {
                     driver = "org.postgresql.Driver"
-                    url = System.getenv('DB_JDBC_URL')
+                    url = System.getenv("DB_JDBC_URL")
                     user = System.getenv("DB_USERNAME")
                     password = System.getenv("DB_PASSWORD")
                 }
@@ -71,7 +81,7 @@ jooq {
                         isDeprecated = false
                         isRecords = true
                         isPojos = true
-                        isDaos = true
+                        isDaos = false
                         isFluentSetters = true
                     }
                     target.apply {
