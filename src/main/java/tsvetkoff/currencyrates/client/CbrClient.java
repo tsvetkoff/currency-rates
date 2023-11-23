@@ -9,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
 import tsvetkoff.currencyrates.dto.CbrDto;
 import tsvetkoff.currencyrates.jooq.main.public_.tables.pojos.Rate;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 
 @Component
@@ -51,8 +53,10 @@ public class CbrClient implements BankClient {
                     Rate rate = new Rate();
                     rate.setBank(BANK);
                     rate.setCurrency(v.getCharCode());
-                    rate.setPurchase(v.getValue());
-                    rate.setSale(v.getValue());
+
+                    BigDecimal value = v.getValue().divide(v.getNominal(), RoundingMode.HALF_UP);
+                    rate.setPurchase(value);
+                    rate.setSale(value);
                     return rate;
                 }).toList();
     }

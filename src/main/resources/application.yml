@@ -7,6 +7,7 @@ spring:
       idle-timeout: 10000
       minimum-idle: 0
       maximum-pool-size: 10
+      pool-name: HikariPool-PG
   liquibase:
     enabled: true
     default-schema: public
@@ -19,6 +20,20 @@ server:
 logging:
   level:
     "tsvetkoff.currencyrates": DEBUG
+
+management:
+  endpoints:
+    web.exposure.include: health,info,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    distribution:
+      percentiles-histogram:
+        "[http.server.requests]": true
 
 data:
   update_rates.cron: "0 */10 8-19 * * MON-SAT"

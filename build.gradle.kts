@@ -25,7 +25,9 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jooq")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
+
     implementation("org.liquibase:liquibase-core")
     implementation("net.javacrumbs.shedlock:shedlock-spring:5.9.1")
     implementation("net.javacrumbs.shedlock:shedlock-provider-jdbc-template:5.9.1")
@@ -39,6 +41,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
 
     runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly("io.micrometer:micrometer-registry-prometheus")
 
     annotationProcessor("org.projectlombok:lombok")
 
@@ -46,6 +49,14 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:postgresql:1.19.1")
     testImplementation("org.testcontainers:junit-jupiter")
+}
+
+tasks.jar {
+    enabled = false
+}
+
+tasks.bootJar {
+    archiveFileName = "${project.name}.jar"
 }
 
 tasks.withType<Test> {
