@@ -1,4 +1,0 @@
-CREATE TABLE IF NOT EXISTS public.currency (
-  id   VARCHAR PRIMARY KEY,
-  name VARCHAR
-);

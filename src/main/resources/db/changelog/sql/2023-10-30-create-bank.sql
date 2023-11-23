@@ -1,4 +1,0 @@
-CREATE TABLE IF NOT EXISTS public.bank (
-  id   VARCHAR PRIMARY KEY,
-  name VARCHAR
-);

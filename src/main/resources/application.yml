@@ -1,14 +1,1 @@
-spring:
-  datasource:
-    url: ${DB_JDBC_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    hikari:
-      idle-timeout: 10000
-      minimum-idle: 0
-      maximum-pool-size: 10
-  liquibase:
-    enabled: true
-    default-schema: public
-    liquibase-schema: public
-    change-log: classpath:/db/changelog/db.changelog-master.xml
+
